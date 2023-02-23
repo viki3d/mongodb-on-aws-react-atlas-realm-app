@@ -17,3 +17,5 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 4. Check the created Rule
 5. Set Authentication method
 
+#### Use serverless connection from React by using REALM_APP_ID
+
