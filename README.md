@@ -7,7 +7,7 @@
 Realm is a mobile-first database designed for modern, data-driven applications. You can use Realm to build mobile, web, desktop, and IoT apps.  
 
 
-##### Setup the RealmApp in MongoDB Atlas  
+#### Setup the RealmApp in MongoDB Atlas  
 1. Create RealmApp from ...  
 2. Check the RealmApp has been created
 3. Create Access-Rule to access the needed collection
