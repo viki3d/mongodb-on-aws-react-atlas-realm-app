@@ -26,7 +26,7 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 ![04](/setup-realm-app-04-see-rule.png?v=1 "Check the Rule")
 
 5. Set Authentication method  
-![04](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
+![05](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
 
 #### Define RealmApp functions in MongoDB Atlas  
 ```
