@@ -17,8 +17,19 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 4. Check the created Rule
 5. Set Authentication method
 
-#### Use serverless connection from React by using REALM_APP_ID
+#### Use serverless connection with Realm React
 
+##### Realm React
+Realm React is an npm package that provides an easy-to-use API to perform common Realm operations, such as querying or writing to a realm and listening to realm objects.  
+
+Realm React helps you avoid creating boilerplate code, such as creating your own listeners and state management. Realm React provides access to Realm database through a set of hooks that update React state when the Realm data changes. This means that components using these hooks will re-render on any changes to data in the realm.  
+
+##### Setup Realm React
+```
+npm install realm-web
+```
+
+##### Use Realm React
 ```
 function MyComponent() {
 
@@ -40,3 +51,7 @@ function MyComponent() {
 	...
 }
 ```
+We adopt serverless approach by using REALM_APP_ID, instead any connection strings.  
+
+
+
