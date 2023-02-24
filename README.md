@@ -5,17 +5,28 @@ MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 
 ####  Overview  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
+![01](/mongodb-on-aws-react-atlas-realm-app-01.png?v=1 "Architectural Overview")
+
 
 ####  MongoDB Realm  
 Realm is a mobile-first database designed for modern, data-driven applications. You can use Realm to build mobile, web, desktop, and IoT apps.  
 
 
 #### Setup the RealmApp in MongoDB Atlas  
-1. Create RealmApp from ...  
-2. Check the RealmApp has been created
-3. Create Access-Rule to access the needed collection
-4. Check the created Rule
-5. Set Authentication method
+1. Create RealmApp  
+![01](/setup-realm-app-01-create-realm-app.png?v=1 "Create RealmApp")
+
+2. Check the RealmApp has been created  
+![02](/setup-realm-app-02-realm-app-created.png?v=1 "Check the RealmApp")
+
+3. Create Access-Rule to access the needed collection  
+![03](/setup-realm-app-03-create-rule-for-db.png?v=1 "Create Access-Rule")
+
+4. Check the created Rule  
+![04](/setup-realm-app-04-see-rule.png?v=1 "Check the Rule")
+
+5. Set Authentication method  
+![04](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
 
 #### Define RealmApp functions in MongoDB Atlas  
 ```
