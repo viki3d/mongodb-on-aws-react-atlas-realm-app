@@ -17,6 +17,101 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 4. Check the created Rule
 5. Set Authentication method
 
+#### Define RealmApp functions in MongoDB Atlas  
+```
+================================================================================
+MongoDB ATLAS - RealmApp functions
+================================================================================
+
+--------------------------------------------------------------------------------
+getAllAuthors()
+--------------------------------------------------------------------------------
+...
+
+--------------------------------------------------------------------------------
+getAllBooks()
+--------------------------------------------------------------------------------
+...
+	
+--------------------------------------------------------------------------------
+getAllBooksByAuthor()
+--------------------------------------------------------------------------------
+// Testing: exports('','Hailey')
+exports = async function(fname, lname){
+
+  // Find the name of the MongoDB service to use (see "Linked Data Sources" tab)
+  var serviceName = "mongodb-atlas";
+
+  // Update these to reflect your db/collection
+  var dbName = "vibookstore";
+  var collName = "books";
+
+  // Get a collection from the context
+  var collection = context.services.get(serviceName).db(dbName).collection(collName);
+
+  if (fname=="" && lname=="")
+    return await collection.find({});
+  else    
+    return await collection.find({ $or : [ { "author.firstname" : fname }, { "author.lastname" : lname } ] });
+};
+
+--------------------------------------------------------------------------------
+getAllCountries()
+--------------------------------------------------------------------------------
+...
+
+--------------------------------------------------------------------------------
+getAuthorsByCountry()
+--------------------------------------------------------------------------------
+...
+
+--------------------------------------------------------------------------------
+getCountOfBooksPerAuthor
+--------------------------------------------------------------------------------
+exports = async function(arg){
+
+  // Find the name of the MongoDB service you want to use (see "Linked Data Sources" tab)
+  var serviceName = "mongodb-atlas";
+
+  // Update these to reflect your db/collection
+  var dbName = "vibookstore";
+  var collName = "books";
+
+  // Get a collection from the context
+  var collection = context.services.get(serviceName).db(dbName).collection(collName);
+
+  return await collection.aggregate([
+		{ $group : {_id:"$author", booksForThisAuthor:{ $sum:1 }, id : { $first:"$id"  } } },
+		{ $sort : { _id : 1 } }
+	]);
+};
+
+
+--------------------------------------------------------------------------------
+getCountOfBooksPerYear
+--------------------------------------------------------------------------------
+exports = async function(arg){
+
+  // Find the name of the MongoDB service you want to use (see "Linked Data Sources" tab)
+  var serviceName = "mongodb-atlas";
+
+  // Update these to reflect your db/collection
+  var dbName = "vibookstore";
+  var collName = "books";
+
+  // Get a collection from the context
+  var collection = context.services.get(serviceName).db(dbName).collection(collName);
+
+  return await collection.aggregate([
+		{ $match:{ year : { $gt : 0 } }},
+		{ $group : {_id:"$year", booksForThisYear:{ $sum:1 }, id : { $first:"$id"  } } },
+		{ $sort : { _id : 1 } }
+  ]);
+
+};
+```
+
+
 #### Use serverless connection with Realm React
 
 ##### Realm React
