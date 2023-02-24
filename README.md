@@ -19,3 +19,24 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 
 #### Use serverless connection from React by using REALM_APP_ID
 
+```
+function MyComponent() {
+
+	const [books, setBooks] = useState([]);
+
+	async function  fetchData() {
+		const REALM_APP_ID = "vibookstoreappservice-shyqt";
+		const app = new Realm.App( {id:REALM_APP_ID} );
+		const credentials = await Realm.Credentials.anonymous();
+		try {
+			const user = await app.logIn(credentials);
+			const allBooks = await user.functions.getAllBooks();
+			setBooks(allBooks);
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
+	...
+}
+```
