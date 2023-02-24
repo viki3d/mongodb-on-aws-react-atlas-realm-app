@@ -38,7 +38,7 @@ getAllBooksByAuthor()
 --------------------------------------------------------------------------------
 exports = async function(fname, lname){
 
-  // Find the name of the MongoDB service to use (see "Linked Data Sources" tab)
+  // Find the name of the MongoDB service to use
   var serviceName = "mongodb-atlas";
 
   // Update these to reflect your db/collection
@@ -69,7 +69,7 @@ getCountOfBooksPerAuthor
 --------------------------------------------------------------------------------
 exports = async function(arg){
 
-  // Find the name of the MongoDB service you want to use (see "Linked Data Sources" tab)
+  // Find the name of the MongoDB service you want to use
   var serviceName = "mongodb-atlas";
 
   // Update these to reflect your db/collection
