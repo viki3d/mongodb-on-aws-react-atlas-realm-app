@@ -36,7 +36,6 @@ getAllBooks()
 --------------------------------------------------------------------------------
 getAllBooksByAuthor()
 --------------------------------------------------------------------------------
-// Testing: exports('','Hailey')
 exports = async function(fname, lname){
 
   // Find the name of the MongoDB service to use (see "Linked Data Sources" tab)
