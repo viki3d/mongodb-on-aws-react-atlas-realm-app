@@ -12,6 +12,9 @@ MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 ### <a href="#c3_1"   >3.1. Realm React</a>  
 ### <a href="#c3_2"   >3.2. Setup Realm React</a>  
 ### <a href="#c3_3"   >3.3. Use Realm React</a>  
+## <a href="#c4"      >4. Interface</a>  
+### <a href="#c4_1"   >4.1. Home</a>  
+### <a href="#c4_2"   >4.2. Books (no filter)</a>  
 
 ####  <span id="c1">1. Overview</span>  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
@@ -168,5 +171,8 @@ function MyComponent() {
 ```
 We adopt serverless approach by using REALM_APP_ID, instead any connection strings.  
 
+#### <span id="c4">4. Interface</span>  
 
+##### <span id="c4_1">4.1. Home</span>  
+![Home](screenshot_01.png?id=1 "Home")  
 
