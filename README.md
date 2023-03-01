@@ -132,19 +132,19 @@ exports = async function(arg){
 ```
 
 
-#### Use serverless connection with Realm React
+#### <span id="c3">Use serverless connection with Realm React</span>  
 
-##### Realm React
+##### <span id="c3_1">Realm React</span>  
 Realm React is an npm package that provides an easy-to-use API to perform common Realm operations, such as querying or writing to a realm and listening to realm objects.  
 
 Realm React helps you avoid creating boilerplate code, such as creating your own listeners and state management. Realm React provides access to Realm database through a set of hooks that update React state when the Realm data changes. This means that components using these hooks will re-render on any changes to data in the realm.  
 
-##### Setup Realm React
+##### <span id="c3_2">Setup Realm React</span>  
 ```
 npm install realm-web
 ```
 
-##### Use Realm React
+##### <span id="c3_3">Use Realm React</span>  
 ```
 function MyComponent() {
 
