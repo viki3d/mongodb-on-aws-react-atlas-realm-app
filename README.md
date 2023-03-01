@@ -3,16 +3,26 @@ MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 
 [Live DEMO (click)](http://viki3d.com/demos/vibookstore)
 
-####  Overview  
+### CONTENTS
+## <a href="#c1"      >1. Overview</a>  
+## <a href="#c2"      >2. MongoDB Realm</a>  
+### <a href="#c2_1"   >2.1. Setup the RealmApp in MongoDB Atlas</a>  
+### <a href="#c2_2"   >2.2. Define RealmApp functions in MongoDB Atlas</a>  
+## <a href="#c3"      >3. Use serverless connection with Realm React</a>  
+### <a href="#c3_1"   >3.1. Realm React</a>  
+### <a href="#c3_2"   >3.2. Setup Realm React</a>  
+### <a href="#c3_3"   >3.3. Use Realm React</a>  
+
+####  <span id="c1">Overview</span>  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
 ![01](/mongodb-on-aws-react-atlas-realm-app-01.png?v=1 "Architectural Overview")
 
 
-####  MongoDB Realm  
+####  <span id="c2">MongoDB Realm</span>  
 Realm is a mobile-first database designed for modern, data-driven applications. You can use Realm to build mobile, web, desktop, and IoT apps.  
 
 
-#### Setup the RealmApp in MongoDB Atlas  
+#### <span id="c2_1">Setup the RealmApp in MongoDB Atlas</span>  
 1. Create RealmApp  
 ![01](/setup-realm-app-01-create-realm-app.png?v=1 "Create RealmApp")
 
@@ -28,7 +38,7 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 5. Set Authentication method  
 ![05](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
 
-#### Define RealmApp functions in MongoDB Atlas  
+#### <span id="c2_2">Define RealmApp functions in MongoDB Atlas</span>  
 ```
 ================================================================================
 MongoDB ATLAS - RealmApp functions
