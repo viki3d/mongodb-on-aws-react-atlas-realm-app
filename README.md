@@ -1,7 +1,7 @@
 # mongodb-on-aws-react-atlas-realm-app
 MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 
-[Live DEMO](http://viki3d.com/demos/vibookstore)
+[Live DEMO (click)](http://viki3d.com/demos/vibookstore)
 
 ####  Overview  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
