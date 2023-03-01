@@ -13,16 +13,16 @@ MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 ### <a href="#c3_2"   >3.2. Setup Realm React</a>  
 ### <a href="#c3_3"   >3.3. Use Realm React</a>  
 
-####  <span id="c1">Overview</span>  
+####  <span id="c1">1. Overview</span>  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
 ![01](/mongodb-on-aws-react-atlas-realm-app-01.png?v=1 "Architectural Overview")
 
 
-####  <span id="c2">MongoDB Realm</span>  
+####  <span id="c2">2. MongoDB Realm</span>  
 Realm is a mobile-first database designed for modern, data-driven applications. You can use Realm to build mobile, web, desktop, and IoT apps.  
 
 
-#### <span id="c2_1">Setup the RealmApp in MongoDB Atlas</span>  
+#### <span id="c2_1">2.1. Setup the RealmApp in MongoDB Atlas</span>  
 1. Create RealmApp  
 ![01](/setup-realm-app-01-create-realm-app.png?v=1 "Create RealmApp")
 
@@ -38,7 +38,7 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 5. Set Authentication method  
 ![05](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
 
-#### <span id="c2_2">Define RealmApp functions in MongoDB Atlas</span>  
+#### <span id="c2_2">2.2. Define RealmApp functions in MongoDB Atlas</span>  
 ```
 ================================================================================
 MongoDB ATLAS - RealmApp functions
@@ -132,19 +132,19 @@ exports = async function(arg){
 ```
 
 
-#### <span id="c3">Use serverless connection with Realm React</span>  
+#### <span id="c3">3. Use serverless connection with Realm React</span>  
 
-##### <span id="c3_1">Realm React</span>  
+##### <span id="c3_1">3.1. Realm React</span>  
 Realm React is an npm package that provides an easy-to-use API to perform common Realm operations, such as querying or writing to a realm and listening to realm objects.  
 
 Realm React helps you avoid creating boilerplate code, such as creating your own listeners and state management. Realm React provides access to Realm database through a set of hooks that update React state when the Realm data changes. This means that components using these hooks will re-render on any changes to data in the realm.  
 
-##### <span id="c3_2">Setup Realm React</span>  
+##### <span id="c3_2">3.2. Setup Realm React</span>  
 ```
 npm install realm-web
 ```
 
-##### <span id="c3_3">Use Realm React</span>  
+##### <span id="c3_3">3.3. Use Realm React</span>  
 ```
 function MyComponent() {
 
