@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+:root {
+	--bs-link-color: white;
+	--bs-link-hover-color: white;
+}
+*/
+
+.app-nav-menu-logo {
+	width : 50px;
+}
+
+.app-menu-link {
+	color: white !important;
+}
+
+.app-menu-brand-link {
+	color : black;
+	font-weight : bold;
+	text-decoration : none;
+	font-size : 1.5em;
+}
+
+.app-book-card {
+	width : 200px;
+	display: inline-block;
+}
+
+.app-book-card-img {
+	width : 198px;
+}
+
+.app-book-card-body {
+	background-color : #d1e7dd;
+}
+
+.app-book-card-title {
+	min-height : 54px; 
+	background-color : #bcd0c7;
+}
+
+.app-page-home {
+	min-height : 80vh;
+	text-align : center;}
+
+.app-page-home-img {
+	max-width : 30vw;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+	.app-react-logo {
+		animation: app-react-logo-spin infinite 20s linear;
+		width : 30px;
+		position : relative;
+		top : -2px;
+	}
+}
+
+@keyframes app-react-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.app-mongodb-logo {
+	width : 22px;
+}
+
+.app-aws-logo {
+	width : 50px;
+}
