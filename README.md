@@ -176,3 +176,5 @@ We adopt serverless approach by using REALM_APP_ID, instead any connection strin
 ##### <span id="c4_1">4.1. Home</span>  
 ![Home](screenshot_01.png?id=1 "Home")  
 
+##### <span id="c4_2">4.2. Books (no filter)</span>  
+![Home](screenshot_02.png?id=1 "Books")  
