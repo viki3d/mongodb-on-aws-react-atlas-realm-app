@@ -15,6 +15,9 @@ MongoDB, Atlas-on-AWS-Cloud, Javascript, ReactJS, Bootstrap
 ## <a href="#c4"      >4. Interface</a>  
 ### <a href="#c4_1"   >4.1. Home</a>  
 ### <a href="#c4_2"   >4.2. Books (no filter)</a>  
+### <a href="#c4_3"   >4.3. Books (filter)</a>  
+### <a href="#c4_4"   >4.4. Authors</a>  
+### <a href="#c4_5"   >4.5. Statistics</a>  
 
 ####  <span id="c1">1. Overview</span>  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
@@ -177,4 +180,11 @@ We adopt serverless approach by using REALM_APP_ID, instead any connection strin
 ![Home](screenshot_01.png?id=1 "Home")  
 
 ##### <span id="c4_2">4.2. Books (no filter)</span>  
-![Home](screenshot_02.png?id=1 "Books")  
+![Books](screenshot_02.png?id=1 "Books")  
+![Books](screenshot_03.png?id=1 "Books")  
+![Books](screenshot_04.png?id=1 "Books")  
+
+##### <span id="c4_3">4.3. Books (filter)</span>  
+![Books](screenshot_05.png?id=1 "Books")  
+
+
