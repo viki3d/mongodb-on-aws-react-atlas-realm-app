@@ -1,5 +1,5 @@
 # mongodb-on-aws-react-atlas-realm-app
-MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
+MongoDB, Atlas-on-AWS-Cloud, Javascript, ReactJS, Bootstrap
 
 [Live DEMO (click)](http://viki3d.com/demos/vibookstore)
 
