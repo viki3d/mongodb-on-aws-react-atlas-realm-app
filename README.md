@@ -1,18 +1,31 @@
 # mongodb-on-aws-react-atlas-realm-app
 MongoDB, Atlas-on-AWS-Cloud, ReactJS, Bootstrap
 
-[Live DEMO](http://viki3d.com/demos/vibookstore)
+[Live DEMO (click)](http://viki3d.com/demos/vibookstore)
 
-####  Overview  
+### CONTENTS
+## <a href="#c1"      >1. Overview</a>  
+## <a href="#c2"      >2. MongoDB Realm</a>  
+### <a href="#c2_1"   >2.1. Setup the RealmApp in MongoDB Atlas</a>  
+### <a href="#c2_2"   >2.2. Define RealmApp functions in MongoDB Atlas</a>  
+## <a href="#c3"      >3. Use serverless connection with Realm React</a>  
+### <a href="#c3_1"   >3.1. Realm React</a>  
+### <a href="#c3_2"   >3.2. Setup Realm React</a>  
+### <a href="#c3_3"   >3.3. Use Realm React</a>  
+## <a href="#c4"      >4. Interface</a>  
+### <a href="#c4_1"   >4.1. Home</a>  
+### <a href="#c4_2"   >4.2. Books (no filter)</a>  
+
+####  <span id="c1">1. Overview</span>  
 This is a virtual bookstore, powered with the technologies, described above. Here is a general arcitectural view:
 ![01](/mongodb-on-aws-react-atlas-realm-app-01.png?v=1 "Architectural Overview")
 
 
-####  MongoDB Realm  
+####  <span id="c2">2. MongoDB Realm</span>  
 Realm is a mobile-first database designed for modern, data-driven applications. You can use Realm to build mobile, web, desktop, and IoT apps.  
 
 
-#### Setup the RealmApp in MongoDB Atlas  
+#### <span id="c2_1">2.1. Setup the RealmApp in MongoDB Atlas</span>  
 1. Create RealmApp  
 ![01](/setup-realm-app-01-create-realm-app.png?v=1 "Create RealmApp")
 
@@ -28,7 +41,7 @@ Realm is a mobile-first database designed for modern, data-driven applications. 
 5. Set Authentication method  
 ![05](/setup-realm-app-05-set-auth-method.png?v=1 "Set Authentication method")
 
-#### Define RealmApp functions in MongoDB Atlas  
+#### <span id="c2_2">2.2. Define RealmApp functions in MongoDB Atlas</span>  
 ```
 ================================================================================
 MongoDB ATLAS - RealmApp functions
@@ -122,19 +135,19 @@ exports = async function(arg){
 ```
 
 
-#### Use serverless connection with Realm React
+#### <span id="c3">3. Use serverless connection with Realm React</span>  
 
-##### Realm React
+##### <span id="c3_1">3.1. Realm React</span>  
 Realm React is an npm package that provides an easy-to-use API to perform common Realm operations, such as querying or writing to a realm and listening to realm objects.  
 
 Realm React helps you avoid creating boilerplate code, such as creating your own listeners and state management. Realm React provides access to Realm database through a set of hooks that update React state when the Realm data changes. This means that components using these hooks will re-render on any changes to data in the realm.  
 
-##### Setup Realm React
+##### <span id="c3_2">3.2. Setup Realm React</span>  
 ```
 npm install realm-web
 ```
 
-##### Use Realm React
+##### <span id="c3_3">3.3. Use Realm React</span>  
 ```
 function MyComponent() {
 
@@ -158,5 +171,8 @@ function MyComponent() {
 ```
 We adopt serverless approach by using REALM_APP_ID, instead any connection strings.  
 
+#### <span id="c4">4. Interface</span>  
 
+##### <span id="c4_1">4.1. Home</span>  
+![Home](screenshot_01.png?id=1 "Home")  
 
